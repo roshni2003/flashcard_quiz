@@ -16,7 +16,7 @@ const FlashcardSet = ({ set }) => {
 
   return (
     <div className="flashcard-set">
-      <div className="flashcard-set-header">Flashcard Set {set.id}</div>
+      <div className="flashcard-set-header" style={{marginTop:"30px"}}>Flashcard Set {set.id}</div>
       <div className="flashcard-set-body">
         <TextField
           label="Question"
@@ -30,7 +30,7 @@ const FlashcardSet = ({ set }) => {
           value={answer}
           onChange={(e) => setAnswer(e.target.value)}
         />
-        <Button variant="contained" color="secondary" onClick={handleAddCard}>
+        <Button variant="contained" color="secondary" onClick={handleAddCard} style={{height:"55px"}}>
           Add Card
         </Button>
       </div>
