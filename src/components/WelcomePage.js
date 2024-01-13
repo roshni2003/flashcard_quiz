@@ -16,7 +16,7 @@ const WelcomePage = ({ onStartQuiz }) => {
 
   return (
     <div className="welcome-page" style={backgroundImageStyle}>
-      <Typography variant="h2" gutterBottom>
+      <Typography variant="h2" gutterBottom className='text'>
         Welcome to the Flashcard Quiz App!
       </Typography>
       <Typography variant="h6" gutterBottom>
